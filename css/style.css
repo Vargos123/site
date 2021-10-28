@@ -36,6 +36,7 @@ a{
     align-items: center;
 }
 
+
 .logo__img{
     width: 143px;
     height: 57px;
@@ -60,7 +61,6 @@ a{
 }
 
 
-
 @media screen and (max-width: 1200px){
     .header__content{
     display: flex;
@@ -68,7 +68,7 @@ a{
     justify-content: center;
     align-items: center;
     text-align:center;
-    margin-bottom:50px;
+    margin-bottom:250px;
 }
 }
 
@@ -83,7 +83,6 @@ a{
 }
 
 .logo2__img{
-    padding: 10px 10px 10px;
     width: 570px;
 	height: 401px;
 }
@@ -102,16 +101,19 @@ a{
     padding: 17px 66px 17px;
 }
 
-.footer{
-    position: absolute;
+
+
+/* Footer */
+
+footer{
+    position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     background-color: #7D93C5;
     color: #fff;  
 }
 
-.footer__top{
+.footer__inndown{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -136,3 +138,6 @@ a{
 .footer__imgandemail{
     display: flex;
 }
+
+
+/* Footer */

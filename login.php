@@ -59,18 +59,19 @@
                 ?>   
                 </div>                          
             </div> 
-
-            <!-- footer -->
-            <div class="footer">
+        </div>
+    </header>
+    
+    <footer>
+        <!-- footer -->
+            <div class="footer__inndown">
                 <div class="footer__top">
                     <p class="footer__text-MeNote">© 2021     MeNote</p>
                     <div class="footer__imgandemail">
                         <img class="footer__img-email" src="images/email.png" alt="ERROR">
                         <p class="footer__text-email">menoteapp@gmail.com</p>
-                    </div>      
-                </div>  
-            </div>     
-        </div>
-    </header>
+                    </div>         
+                </div> 
+    </footer>
 </body>
 </html>

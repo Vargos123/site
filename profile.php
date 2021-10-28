@@ -2,7 +2,7 @@
     session_start();
     
     if(!$_SESSION['user']){
-        header('Location: index.html');
+        header('Location: index.php');
     }
     
     include "./includes/connect.php";
@@ -100,28 +100,37 @@
                     </div>
                 </div>
             </div>
-
-
             
-                                     
+            <div style="padding: 100px 0 0;"> </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </header>
-    <script>
-    const edit=document.querySelectorAll(".edit");
-    const title=document.getElementById("title");
-    const descr=document.getElementById("descr");
-    const hiddeninput=document.getElementById("hidden");
-    edit.forEach(element => {
-        element.addEventListener("click", ()=>{
-            const titleMessage=element.parentElement.children[0].innerText;
-            const descrip=element.parentElement.children[1].innerText;
-            title.value=titleMessage;
-            descr.value=descrip;
-            hiddeninput.value=element.id;
-            console.log(hiddeninput);
-        });
-    });
-</script>
+    <footer>
+        <!-- footer -->
+            <div class="footer__inndown">
+                <div class="footer__top">
+                    <p class="footer__text-MeNote">© 2021     MeNote</p>
+                    <div class="footer__imgandemail">
+                        <img class="footer__img-email" src="images/email.png" alt="ERROR">
+                        <p class="footer__text-email">menoteapp@gmail.com</p>
+                    </div>         
+                </div> 
+    </footer>
+        <script>
+            const edit=document.querySelectorAll(".edit");
+            const title=document.getElementById("title");
+            const descr=document.getElementById("descr");
+            const hiddeninput=document.getElementById("hidden");
+            edit.forEach(element => {
+                element.addEventListener("click", ()=>{
+                    const titleMessage=element.parentElement.children[0].innerText;
+                    const descrip=element.parentElement.children[1].innerText;
+                    title.value=titleMessage;
+                    descr.value=descrip;
+                    hiddeninput.value=element.id;
+                    console.log(hiddeninput);
+                });
+            });
+    </script>
 </body>
 </html>
