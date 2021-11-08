@@ -101,6 +101,19 @@ a{
     padding: 17px 66px 17px;
 }
 
+.download__img{
+    width: 20px;
+	height: 20px;
+}
+
+.table__download{
+    margin-top: 20px;
+}
+
+.table__text{
+    padding-left: 5px;
+}
+
 
 
 /* Footer */

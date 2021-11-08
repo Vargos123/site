@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,14 @@
             <div class="header__content">
                 <div class="header__descr">
                     <p class="header__desription">MeNote - лучшая программа для создания заметок</p>
-                    <a class="header__button" href="https://drive.google.com/u/0/uc?export=download&confirm=BxoI&id=1up4ILqsdJNanl--MSXXA3oQ493R8J_Ra">Download</a>
+                    <a class="header__button" href="includes/counter.php">Download</a>
+                    <table class="table__download">
+                       <tr>
+                        <td class="table__text"><img id="btnSend" class="download__img" src="images/download.png" alt="ERROR"></td>
+                        <td class="table__text" style="font-size: 20px;">Cкачиваний:</td>
+                        <td class="table__text" style="font-size: 25px;"><?php echo file_get_contents('includes/counter.txt');?></td>
+                       </tr>
+                    </table> 
                 </div>  
                 <div class="image__notes">
                     <img class="logo2__img" src="images/logo2.png" alt="ERROR">  
@@ -45,5 +52,9 @@
                     </div>         
                 </div> 
     </footer>
+    
+    <script>
+            
+    </script>
 </body>
 </html>
